@@ -1,0 +1,11 @@
+{
+    "name": "Markdown Docs",
+    "version": "1.0.0",
+    "description": "Markdown Docs",
+    "groupOrder": [
+        "Introduction"
+    ],
+    "outputPath": "./docs/dist/",
+    "autoGenerate": true,
+    "generateOnRequest": false
+}

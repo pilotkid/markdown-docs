@@ -1,0 +1,12 @@
+{
+    "groupName": "Example Documents",
+    "groupDescription": "Example documents for testing",
+    "order": [
+        "ApiRoute2.md",
+        "ApiRoute1.md"
+    ],
+    "rename": {
+        "ApiRoute1.md": "Example #1",
+        "ApiRoute2.md": "Example #2"
+    }
+}

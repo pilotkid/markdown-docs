@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Style from w3schools.... I can do better, but it's 2 am -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .api-group {
+      border-bottom: #333 solid 1px;
+    }
+
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+      background-color: #ddd;
+    }
+
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+    }
+
+    code {
+      color: #f15b2a;
+    }
+
+    .group {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: #111 2px solid;
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+      margin: 0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      margin-left: 250px;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 1px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      font-weight: bold;
+    }
+
+    .sidenav a.sub {
+      margin-left: 20px;
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #818181;
+      display: block;
+      font-weight: normal;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .main {
+      /* Same as the width of the sidenav */
+      margin-left: 250px;
+      padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav sticky">
+    <a class="active" href="#">
+      <h2>
+        <!-- THE DOCS NAME FROM THE API -->
+        {{config.name}}
+      </h2>
+    </a>
+  </div>
+  <div class="sidenav">
+    <!-- THE NAV BAR GENERATED FOR THE MAIN BODY (HTML MUST USE 3 PAIRS OF CURLY BRACES) -->
+    {{{nav}}}
+  </div>
+
+  <div class="main">
+    <!-- THE CONTENT GENERATED FOR THE MAIN BODY (HTML MUST USE 3 PAIRS OF CURLY BRACES) -->
+    {{{content}}}
+
+    <hr style="margin-top: 5px;margin-bottom: 5px;" />
+    <span style="margin-bottom: 2px;">
+      Created by markdown-docs
+    </span>
+  </div>
+</body>
+
+
+<link rel="stylesheet" href="http://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/default.min.css">
+<script src="http://unpkg.com/@highlightjs/cdn-assets@11.4.0/highlight.min.js"></script>
+
+<script>hljs.highlightAll(
+    {
+      cssSelector: 'code'
+    }
+  );</script>
+
+</html>

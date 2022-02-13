@@ -1,0 +1,31 @@
+{
+  "name": "markdown-docs",
+  "version": "1.0.0",
+  "bin": {
+    "init-docs": "./bin/docs-init.js"
+  },
+  "description": "A markdown documentation framework for express",
+  "main": "index.js",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "markdown",
+    "documentation"
+  ],
+  "author": "Marcello Bachechi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "glob": "^7.2.0",
+    "handlebars": "^4.7.7",
+    "markdown-to-html": "^0.0.13",
+    "showdown": "^2.0.0-alpha"
+  }
+}

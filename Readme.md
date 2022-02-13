@@ -4,7 +4,7 @@
 
 First install the package
 ```
-npm i markdown-docs
+npm i simple-markdown-docs
 ```
 
 Then initialize the default documentation structure
@@ -147,7 +147,7 @@ Doc3
 
 ```js
 const app = require('express');
-const route = require('markdown-docs').express.route;
+const route = require('simple-markdown-docs').express.route;
 // Docs will be added to your routes by going to `/docs`
 app.use(route(
     //Optionally specify the top level configuration

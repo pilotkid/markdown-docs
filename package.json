@@ -1,5 +1,5 @@
 {
-  "name": "markdown-docs",
+  "name": "simple-markdown-docs",
   "version": "1.0.0",
   "bin": {
     "init-docs": "./bin/docs-init.js"

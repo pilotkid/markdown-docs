@@ -4,14 +4,14 @@
   "bin": {
     "init-docs": "./bin/docs-init.js"
   },
-  "description": "A markdown documentation framework for express",
+  "description": "A markdown documentation framework with support for express",
   "main": "index.js",
   "scripts": {
     "test": "."
   },
   "repository": {
     "type": "git",
-    "url": "."
+    "url": "https://github.com/pilotkid/markdown-docs.git"
   },
   "keywords": [
     "express",
